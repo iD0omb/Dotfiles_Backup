@@ -1,0 +1,45 @@
+#Ignore everything by default (Whitelist mode)
+*
+
+#Re-allow folder traversal
+!*/
+!.gitignore
+!/README.md
+
+# --- fish ---
+!fish/.config/fish/config.fish
+!fish/.config/fish/functions/
+!fish/.config/fish/functions/**
+!fish/.config/fish/colors/
+!fish/.config/fish/colors/**
+
+# --- Kitty ---
+!kitty/.config/kitty/kitty.conf
+!kitty/.config/kitty/theme.conf
+
+# --- Hypr ---
+!hypr/.config/hypr/autostart.conf
+!hypr/.config/hypr/colors.conf
+!hypr/.config/hypr/hypridle.conf
+!hypr/.config/hypr/hyprland.conf
+!hypr/.config/hypr/hyprlock.conf
+!hypr/.config/hypr/hyprpaper.conf
+!hypr/.config/hypr/keybinds.conf
+
+# --- Neovim ---
+# Config and Plugin logic
+!nvim/.config/nvim/init.lua
+!nvim/.config/nvim/lua/**
+# Optional; Consistent Plugin state
+!nvim/.config/nvim/lazy-lock.json
+#Formatting, Docs
+!nvim/.config/nvim/stylua.toml
+!nvim/.config/nvim/.neoconf.json
+!nvim/.config/nvim/README.md
+!nvim/.config/nvim/LICENSE
+
+# --- FastFetch ---
+!fastfetch/.config/fastfetch/config.jsonc
+
+# --- Dunst ---
+!dunst/.config/dunst/dunstrc
