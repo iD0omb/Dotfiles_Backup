@@ -37,5 +37,6 @@ if status is-interactive
     set -gx PICO_SDK_PATH $HOME/RPICO/pico-sdk/
     #ARM GCC Toolchain
     set -gx PATH $PATH /opt/gcc-arm-none-eabi-13.3/bin
-
+    #Welcome Message
+    set -g fish_greeting ""
 end
