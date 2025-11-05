@@ -5,6 +5,7 @@
 !*/
 !.gitignore
 !/README.md
+!/pkglist.txt
 
 # --- fish ---
 !fish/.config/fish/config.fish
