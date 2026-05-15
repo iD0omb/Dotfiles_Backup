@@ -44,3 +44,6 @@
 
 # --- Dunst ---
 !dunst/.config/dunst/dunstrc
+
+# --- rofi ---
+!rofi/.config/rofi/
