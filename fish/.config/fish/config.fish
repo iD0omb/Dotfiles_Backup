@@ -22,12 +22,15 @@ if status is-interactive
     btop
     upower -d"
     set_color normal
-    #aliases
+    # ===================== Aliases =====================
 
+    #Common Commands
     alias ls='ls --color=auto'
     alias grep='grep --color=auto'
-    #Wi-Fi scanner tool##
+
+    #Wi-Fi scanner tool
     alias wifiscan='sudo linssid'
+
     #CMake shortcut for Clang
     alias cmake='cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON'
 
