@@ -1,0 +1,82 @@
+/**
+ * Standalone Powermenu Theme
+ * Custom Color Palette
+ */
+
+* {
+    /* --- FONTS --- */
+    /* Change this to your specific Nerd Font */
+    font: "Iosevka Nerd Font 21";
+
+
+    /* --- BASE COLORS --- */
+    gray:     #7E807C;
+    olive:    #657136;
+    yellow:   #F8F546;
+    silver:   #A0AAA9;
+    charcoal: #313739;
+    darker:   #1E2224;
+
+    /* --- GLOBAL TEXT --- */
+    background-color: transparent;
+    text-color:       @silver;
+}
+
+window {
+    background-color: @darker;       /* Darker for backgrounds */
+    border:           3px;
+    border-color:     @yellow;        
+    border-radius:    5px;
+    width:            600px;
+    padding:          15px;
+    location:         center;
+    anchor:           center;
+}
+
+mainbox {
+    children: [ listview ];
+    border:   0;
+    padding:  0;
+}
+
+listview {
+    fixed-columns: true; 
+    columns:      5;
+    lines:        1;
+    border:       0px;
+    spacing:      9px;
+    scrollbar:    false;
+    padding:      0px;
+}
+
+element {
+    border:        3px;
+    border-color:  @silver;      /* Invisible border keeps the layout from shifting */
+    border-radius: 5px;
+    padding:       15px 0px;        /* Padding adjusted to accommodate the 2px border */
+    background-color: transparent;
+}
+
+element.normal.normal { 
+    background-color: transparent; 
+}
+
+element.alternate.normal { 
+    background-color: transparent; 
+}
+
+/* This is where the active/highlight styling is applied */
+element.selected.normal {
+    background-color: @gray;         /* Gray for highlights */
+    text-color:       @yellow;       /* Darker text on the lighter gray background for contrast */
+    border:           3px;
+    border-color:     @yellow;       /* Yellow for active borders */
+}
+
+element-text {
+    anchor:           center;
+    background-color: inherit;
+    text-color:       inherit;
+    horizontal-align: 0.44;
+    cursor:           pointer;
+}

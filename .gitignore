@@ -46,7 +46,10 @@
 !dunst/.config/dunst/dunstrc
 
 # --- rofi ---
-!rofi/.config/rofi/
+!rofi/.config/rofi/*
 
 # --- cava ---
 !cava/.config/cava/*
+
+# --- waybar ---
+!waybar/.config/waybar/*

@@ -2,26 +2,26 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
     #Fastfetch and quick information
     fastfetch
-    set_color green
-    echo "=== ADB Tools ==="
-    set_color green
-    echo "    adb
-    scrcpy"
-
-    set_color blue
-    echo "=== Wi-Fi Tools ==="
-    set_color blue
-    echo "    wavemon
-    linssid
-    nmcli"
-
-    set_color red
-    echo "=== System Scanners ==="
-    set_color red
-    echo "    htop
-    btop
-    upower -d"
-    set_color normal
+    # set_color green
+    # echo "=== ADB Tools ==="
+    # set_color green
+    # echo "    adb
+    # scrcpy"
+    #
+    # set_color blue
+    # echo "=== Wi-Fi Tools ==="
+    # set_color blue
+    # echo "    wavemon
+    # linssid
+    # nmcli"
+    #
+    # set_color red
+    # echo "=== System Scanners ==="
+    # set_color red
+    # echo "    htop
+    # btop
+    # upower -d"
+    # set_color normal
     # ===================== Aliases =====================
 
     #Common Commands
@@ -42,4 +42,5 @@ if status is-interactive
     set -gx PATH $PATH /opt/gcc-arm-none-eabi-13.3/bin
     #Welcome Message
     set -g fish_greeting ""
+
 end
