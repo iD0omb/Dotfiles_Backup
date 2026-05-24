@@ -47,3 +47,6 @@
 
 # --- rofi ---
 !rofi/.config/rofi/
+
+# --- cava ---
+!cava/.config/cava/*
