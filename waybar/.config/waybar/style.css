@@ -168,9 +168,38 @@ window#waybar {
   font-size: 16px;
 }
 
+
+/* Battery */
+#battery.charging,
+#battery.plugged {
+  background-color: transparent;
+  color: @green;
+}
+
+#battery.full {
+  background-color: transparent;
+  color: @silver;
+}
+
+#battery.warning {
+  background-color: transparent;
+  color: @peach;
+}
+
+#battery.critical {
+  background-color: transparent;
+  color: @red;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
 /* Volume */
 #wireplumber{
-  margin-right: 35px;
+  margin-right: 10px;
   min-width: 65px; 
 }
 
@@ -189,7 +218,7 @@ window#waybar {
 
 /* Backlight */
 #backlight {
-  margin-right: 35px;
+  margin-right: 10px;
 }
 
 #custom-notification {
